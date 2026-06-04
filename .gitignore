@@ -1,0 +1,24 @@
+# secrets / env
+.env
+*.key
+*.pem
+credentials.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# node
+node_modules/
+
+# os / editor
+.DS_Store
+*.swp
+
+# runtime
+*.log
+*.pid
+
+# anticrow secrets
+.anticrow/config

@@ -1,0 +1,17 @@
+{
+  "_comment": "リク AntiCrow チーム設定 (Antigravity). 初期は直列処理で運用開始.",
+  "name": "riku-smartearth",
+  "enabled": false,
+  "_enabled_note": "サブエージェント並列は当面OFF=直列処理. Antigravity側で安定確認後に判断 (フォルダ名は英数半角厳守).",
+  "mode": "serial",
+  "subagents": [],
+  "model_default": "gemini-2.5-flash",
+  "model_escalation": "gemini-2.5-pro",
+  "channels": ["discord"],
+  "_channels_note": "Discord=AntiCrow経由. LINE WORKS(主窓口)は別bridge併設予定.",
+  "pro_constraints": {
+    "max_routines_per_day": 5,
+    "max_parallel_subagents": 3,
+    "max_parallel_webfetch": 5
+  }
+}

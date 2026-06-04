@@ -1,0 +1,23 @@
+# リク AntiCrow / Antigravity 接続設定 例
+# ★実際の値は .anticrow/config (gitignore済) か .env に「ターミナルで直接」記入する。
+# ★このファイルはサンプル。トークン・秘密鍵を絶対にここへ書かない / Git に載せない (genome C2)。
+
+# --- Discord (AntiCrow bridge) ---
+DISCORD_BOT_TOKEN=<ターミナルで設定>
+DISCORD_CHANNEL_ID=<リク用チャンネルID>
+
+# --- Gemini / Antigravity ---
+GEMINI_MODEL_DEFAULT=gemini-2.5-flash
+GEMINI_MODEL_ESCALATION=gemini-2.5-pro
+
+# --- AutoAccept (V2) ---
+AUTOACCEPT_CDP_PORT=9000
+# 不可逆操作 (削除/送信/購入/公開) は AutoAccept 対象外に設定すること (genome C3)
+
+# --- LINE WORKS bridge (SmartEarth 主窓口) ---
+LW_CLIENT_ID=<ターミナルで設定>
+LW_CLIENT_SECRET=<ターミナルで設定>
+LW_SERVICE_ACCOUNT=<ターミナルで設定>
+LW_PRIVATE_KEY_PATH=<秘密鍵ファイルのパス>
+LW_BOT_ID=<ターミナルで設定>
+LW_DOMAIN_ID=<ターミナルで設定>
